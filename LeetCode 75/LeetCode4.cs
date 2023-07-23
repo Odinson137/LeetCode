@@ -9,7 +9,7 @@ namespace LeetCode4;
 
 class LeetCode4
 {
-    public static bool CanPlaceFlowers(int[] flowerbed, int n)
+    public bool CanPlaceFlowers(int[] flowerbed, int n)
     {
         int len = flowerbed.Length;
         if (len < 3)
@@ -102,11 +102,11 @@ class LeetCode4
 
     //return false;
 
-    public static void Main()
-    {
-        int[] flowerbed = new int[] { 0, 1, 0, 1, 0, 1, 0, 0 };
-        int n = 2;
-        bool a = CanPlaceFlowers(flowerbed, n);
-        Console.Write(a);
-    }
+    //public void Main()
+    //{
+    //    int[] flowerbed = new int[] { 0, 1, 0, 1, 0, 1, 0, 0 };
+    //    int n = 2;
+    //    bool a = CanPlaceFlowers(flowerbed, n);
+    //    Console.Write(a);
+    //}
 }
