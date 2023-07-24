@@ -27,10 +27,10 @@ public class Solution
         return sb.ToString().Trim();
     }
 
-    public static void Main()
-    {
-        string s = "  hello world  ";
-        string readyStr = ReverseWords(s);
-        Console.Write(readyStr);
-    }
+    //public static void Main()
+    //{
+    //    string s = "  hello world  ";
+    //    string readyStr = ReverseWords(s);
+    //    Console.Write(readyStr);
+    //}
 }
