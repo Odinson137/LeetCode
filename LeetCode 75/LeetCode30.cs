@@ -42,17 +42,17 @@ public class Solution
         return head;
     }
 
-    public static void Main()
-    {
-        ListNode listNode = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5)))));
+    //public static void Main()
+    //{
+    //    ListNode listNode = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5)))));
 
-        var value = OddEvenList(listNode);
+    //    var value = OddEvenList(listNode);
 
-        Console.WriteLine(value.val);
-        while (value != null && value.next != null)
-        {
-            value = value.next;
-            Console.WriteLine(value.val);
-        }
-    }
+    //    Console.WriteLine(value.val);
+    //    while (value != null && value.next != null)
+    //    {
+    //        value = value.next;
+    //        Console.WriteLine(value.val);
+    //    }
+    //}
 }
