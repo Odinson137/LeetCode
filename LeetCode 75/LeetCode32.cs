@@ -50,13 +50,13 @@ public class Solution
         return max;
     }
 
-    public static void Main()
-    {
-        ListNode listNode = new ListNode(4, new ListNode(2, new ListNode(2, new ListNode(3))));
+    //public static void Main()
+    //{
+    //    ListNode listNode = new ListNode(4, new ListNode(2, new ListNode(2, new ListNode(3))));
 
-        var value = PairSum(listNode);
+    //    var value = PairSum(listNode);
 
-        Console.WriteLine(value);
+    //    Console.WriteLine(value);
         
-    }
+    //}
 }
