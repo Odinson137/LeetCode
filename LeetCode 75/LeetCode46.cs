@@ -22,7 +22,6 @@ public class Solution
         int[] dr = { -1, 1, 0, 0 };
         int[] dc = { 0, 0, -1, 1 };
 
-        // Создаем список смежности
         for (int row = 0; row < rows; row++)
         {
             for (int col = 0; col < cols; col++)
@@ -48,7 +47,6 @@ public class Solution
             }
         }
 
-        // Инициализируем BFS
         Queue<Tuple<int, int>> queue = new Queue<Tuple<int, int>>();
         var el = Tuple.Create(entrance[0], entrance[1]);
         queue.Enqueue(el);
@@ -70,7 +68,7 @@ public class Solution
                     {
                         if (t.Item1 != entrance[0] || t.Item2 != entrance[1])
                         {
-                            return n + 1; // Добавляем 1, чтобы учесть текущий ход
+                            return n + 1;
                         }
                     }
 
@@ -87,30 +85,30 @@ public class Solution
         return -1; // Выход не найден
     }
 
-    public static void Main()
-    {
-        char[][] maze = new char[][] {
-            new char[] { '+', '.', '+', '+', '+', '+', '+' },
-            new char[] { '+', '.', '+', '.', '.', '.', '+' },
-            new char[] { '+', '.', '+', '.', '+', '.', '+' },
-            new char[] { '+', '.', '.', '.', '+', '.', '+' },
-            new char[] { '+', '+', '+', '+', '+', '.', '+' }
-        };
+    //public static void Main()
+    //{
+    //    char[][] maze = new char[][] {
+    //        new char[] { '+', '.', '+', '+', '+', '+', '+' },
+    //        new char[] { '+', '.', '+', '.', '.', '.', '+' },
+    //        new char[] { '+', '.', '+', '.', '+', '.', '+' },
+    //        new char[] { '+', '.', '.', '.', '+', '.', '+' },
+    //        new char[] { '+', '+', '+', '+', '+', '.', '+' }
+    //    };
 
 
-        //char[][] maze = new char[][] {
-        //    new char[] { '+', '+', '+' },
-        //    new char[] { '.', '.', '.' },
-        //    new char[] { '+', '+', '+' }
-        //};
+    //    //char[][] maze = new char[][] {
+    //    //    new char[] { '+', '+', '+' },
+    //    //    new char[] { '.', '.', '.' },
+    //    //    new char[] { '+', '+', '+' }
+    //    //};
 
 
-        int[] entrance = new int[]
-        {
-            0, 1
-        };
+    //    int[] entrance = new int[]
+    //    {
+    //        0, 1
+    //    };
 
-        int value = NearestExit(maze, entrance);
-        Console.WriteLine(value);
-    }
+    //    int value = NearestExit(maze, entrance);
+    //    Console.WriteLine(value);
+    //}
 }
